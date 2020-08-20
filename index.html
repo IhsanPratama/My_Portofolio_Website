@@ -20,8 +20,60 @@
     
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
-    <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style.css">
+	<style>
+			.custom-btn {
+				
+				color: #fff;
+				border-radius: 30px;
+				padding: 10px 25px;
+				font-family: 'Lato', sans-serif;
+				font-weight: 500;
+				background: transparent;
+				cursor: pointer;
+				transition: all 0.3s ease;
+				position: relative;
+				display: inline-block;
+				 box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+				 7px 7px 20px 0px rgba(0,0,0,.1),
+				 4px 4px 5px 0px rgba(0,0,0,.1);
+				outline: none;
+			  }
+			  
+		.btn-15 {
+			background: #b621fe;
+			border: none;
+			z-index: 1;
+		  }
+		  .btn-15:after {
+			position: absolute;
+			content: "";
+			width: 0;
+			height: 100%;
+			top: 0;
+			right: 0;
+			z-index: -1;
+			background-color: #663dff;
+			border-radius: 30px;
+			 box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+			 7px 7px 20px 0px rgba(0,0,0,.1),
+			 4px 4px 5px 0px rgba(0,0,0,.1);
+			transition: all 0.3s ease;
+		  }
+		  .btn-15:hover {
+			color: #fff;
+		  }
+		  .btn-15:hover:after {
+			left: 0;
+			width: 100%;
+		  }
+		  .btn-15:active {
+			top: 2px;
+		  }
+		  
+	</style>
   </head>
+
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 	  
 	  
@@ -110,7 +162,7 @@
                 </p>
                 
 				<!-- Large modal -->
-<button type="button" class="btn btn-primary py-3 px-3" data-toggle="modal" data-target=".bd-example-modal-lg">Check Out My CV</button>
+<button type="button" class="custom-btn btn btn-primary p-3 btn-15" data-toggle="modal" data-target=".bd-example-modal-lg">Check Out My CV</button>
 
 
 				<!-- <a><a href="http://bit.ly/CVIhsanPratama" target="_blank" class="btn btn-primary py-3 px-3">Check out my CV</a></p> -->
